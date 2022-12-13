@@ -15,7 +15,7 @@ body{
 }
 /* HEADER */
 header {
-width:100%;
+max-width:100%;
 margin: 0;
 text-align: center;
 /* come back to add position to fix header/nav to top when scroll */
@@ -85,6 +85,7 @@ ul {
 }
 
 
+
 #parentDiv {
     display: grid;
     gap: 1rem;
@@ -115,7 +116,7 @@ ul {
 #subDiv {
     text-align: center;
     
-    margin: 10px;
+    margin: 20px 12px 20px 12px;
     padding: 3px;
     overflow: hidden;
     width: 100%;
@@ -145,11 +146,20 @@ ul {
 #adoptapp {
 height: 150px;
 width: auto;
-
+margin-top: 5px;
 }
-#parentdiv img {
+
+
+
+#catPic, #barnCat, #dog, #petfinder {
+    max-width: 300px;
+    height: auto;
+    margin-top: 5px;
+}
+
+#parent div img {
     box-shadow: 5px 5px 15px -4px #000000;
-    width: 300px;
+    max-width: 0px;
     height: auto;
     border-radius: 15px;
     margin-top: 8px;
@@ -165,19 +175,37 @@ h3 {
 }
 
 #barnBuddies{
+    
     text-align: center;
-    margin: 50 12 50 12;
-    padding: 3px;
+    
+    margin: 20px 1px 20px 50px;
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
     border: 1px solid black;
     border-radius: 7px;
     background-color: #cbcbcb46;
-    font-size: 20px;
+    font-size: 18px;
     box-shadow: 5px 5px 15px -4px #000000;
 
 }
 
+@media only screen 
+   and (max-width : 768px) {
+    #barnBuddies {
+        text-align: center;
+        margin-top: 20px;
+        padding: 3px;
+        border: 1px solid black;
+        border-radius: 7px;
+        background-color: #cbcbcb46;
+        font-size: 20px;
+        
+        box-shadow: 5px 5px 15px -4px #000000;
+    }
+   }
 /* Specific to barn buddies */
-#parentdiv li {
+li {
     font-size: 14px;
 }
 
@@ -186,8 +214,9 @@ h3 {
 footer {
     padding: 0;
     margin: 0;
+    /* position: absolute;
+    top: 3300px; */
     max-width: 100%;
-    box-shadow: 5px 5px 15px -4px #000000;
 }
 
 ul {
@@ -219,6 +248,6 @@ h5 {
         height: auto;
        margin: 0;
        position: absolute;
-       top: 2800px;
+       top: 3500px;
     }
    }
