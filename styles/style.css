@@ -1,193 +1,274 @@
 /* Link to Google Font */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 
 /* HOME PAGE */
-body {
-  background-color: #ffffff;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  height: 100vh;
-  width: 100%;
-  line-height: 1.5;
-  font-size: 20px;
+body{
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    line-height: 1.5; 
+    font-size: 20px;
 }
+
 
 /* HEADER */
 header {
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  /* come back to add position to fix header/nav to top when scroll */
-  position: fixed;
-  top: 0;
-  background: white;
-  box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.77);
-  padding: 1em 0 1em 0;
-  z-index: 2;
-}
-
-.flexNav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  /* border: solid black .5px; */
-  /* background-color: #c5c5c546; */
-  border-radius: 5px;
-  font-size: 2em;
-  /* margin: 0 0 0 0 ; */
-}
-
-/* .navigation {
-
-} */
-
-.navLinks {
-  display: inline-flex;
-  margin-block-end: 0px;
-}
-
-.navLinks > li {
-  margin: 5px 5px 5px 5px;
-  font-size: 1.5em;
-}
-
-.navLinks a {
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  color: #af9f96;
-}
-
-.navLinks a:hover {
-  color: #574949;
-}
+    width:100%;
+    margin: 0;
+    text-align: center;
+    /* come back to add position to fix header/nav to top when scroll */
+    /* position: fixed; */
+    top: 0;
+    background: white;
+    box-shadow: 0px 0px 30px 1px rgba(0,0,0,0.77);
+    padding: 1em 0 1em 0;
+    
+    }
+    
+    .flexNav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+       
+        border-radius: 5px;
+        font-size: 2em;
+    }
+    
+    
+    .navLinks {
+        display: inline-flex;
+        margin-block-end: 0px;
+    }
+    
+    .navLinks > li {
+        margin: 5px 5px 5px 5px;
+        font-size: 1.5em;
+    }
+    
+    .navLinks a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        color: #af9f96;
+    }
+    
+    .navLinks a:hover {
+        color: #574949;
+    }
+    
+    ul {
+        list-style: none;
+        text-align: center;
+        font-size: 10px;
+        
+    }
 
 /* BLOCK CARDS FOR SERVICES, ADOPTION, DONATE */
 /* come back to keep image in divs/sections once text is added as well as adjust sixe of section/div to be even*/
 #ib {
-  /* display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     gap: 1rem; */
-  width: 30%;
-  height: 33%;
-  background-color: #cbcbcb46;
-  text-align: center;
-  margin-left: 40px;
-  padding: 10px 50px 10px 50px;
-  border-radius: 3px;
-  /* min-width: 200px; */
+    width: 30%;
+    height:33%;
+    background-color:#cbcbcb46;
+    text-align: center;
+    margin-left: 40px;
+    padding:10px 50px 10px 50px;
+    border-radius: 3px;
+    /* min-width: 200px; */
+
 }
+
+@media only screen 
+   and (max-width : 768px) {
+    #ib {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        /* gap: 1rem;
+        grid-template-areas: 
+        "panel1" 
+        "panel2"
+        "panel3" 
+        "panel4";
+        text-align: center; */
+    }
+}
+
 
 /* HEADING - OUR MISSION */
 #mission {
-  width: 100%;
-  background-color: #cbcbcb46;
-  padding: 3%;
-  margin: 200px 0 30px 0;
-  text-align: center;
-  border-radius: 3px;
+   width: 100%;
+    background-color: #cbcbcb46;
+    padding: 3%;
+    margin: 75px 0 30px 0;
+    text-align: center;
+    border-radius: 3px;
 }
 
+
 #mission img {
-  width: 800px;
-  height: auto;
-  border-radius: 5px;
-  max-width: 100%;
+    width:800px;
+    height:auto;
+    border-radius: 5px;
+    max-width: 100%;
 }
 
 #mission p {
-  padding: 10px;
-}
-
-/* MAIN DIV EVERYTHING IS IN */
-#main {
-  margin-top: 20px;
+    padding: 10px;
 }
 
 /* DEFAULT ALL IMAGE SIZE */
 /* COME BACK TO ADJUST IMAGES WHEN IN PORTRAIT */
 img {
-  max-width: 100%;
-  max-height: 100%;
-  /* min-width: 200px; */
-  height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    /* min-width: 200px; */
+    height:auto;
+  
 }
 /* Side Videos */
 
 /* This pertains to section elements only */
 #training {
-  width: 100%;
-  background-color: #cbcbcb46;
-  padding: 1%;
-  margin: 30px 0 30px 0;
-  text-align: center;
-  border-radius: 3px;
+    width: 100%;
+    background-color: #cbcbcb46;
+    padding: 1%;
+    margin:30px 0 30px 0;
+    text-align: center;
+    border-radius: 3px;
 }
 /* videos */
 iframe {
-  max-width: 100%;
+    max-width: 100%;
 }
 /* 1st video */
 #trainingdiv {
-  width: 60%;
-  height: 60%;
-  position: absolute;
-  right: 10px;
-  top: 1210px;
-  /* padding:100px; */
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    right: 10px;
+    top: 1320px;
+    /* padding:100px; */
 }
 /* 2nd video */
 #cattraining {
-  width: 60%;
-  height: 60%;
-  position: absolute;
-  right: 10px;
-  top: 1790px;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    right: 10px;
+    top: 1895px;
 }
 
 /* 3rd video */
 #catsanddogs {
-  width: 60%;
-  height: 60%;
-  position: absolute;
-  right: 10px;
-  top: 2310px;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    right: 10px;
+    top: 2410px;
 }
+
+
+@media only screen 
+   and (max-width : 768px) {
+    #trainingdiv {
+        display: inline-block;
+        position: absolute;
+        top: 2990px;
+        width: 97%;
+        height: auto;
+        text-align: center;
+       float:none;
+       padding: 0;
+       /* margin: 0 20 0 20; */
+    }
+   }
+
+
+   @media only screen 
+   and (max-width : 768px) {
+    #cattraining {
+        display: inline-block;
+        position: absolute;
+        top: 3580px;
+        width: 97%;
+        height: auto;
+        text-align: center;
+       float:none;
+       padding: 0;
+       /* margin: 0 20 0 20; */
+    }
+   }
+
+   
+
+   @media only screen 
+   and (max-width : 768px) {
+    #catsanddogs {
+        display: inline-block;
+        position: absolute;
+        top: 4150px;
+        width: 97%;
+        height: auto;
+        text-align: center;
+       float:none;
+       padding: 0;
+       /* margin: 0 20 0 20; */
+    }
+   }
+   
 
 /* SPECIFIC TO ADOPT IMAGE */
 /* COME BACK TO KEEP IMAGE IN DIV */
 #adopt > img {
-  max-width: 100%;
+max-width: 100%;
+
 }
 
 /* FOOTER */
 footer {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
+    /* position: absolute;
+    top: 3300px; */
+    max-width: 100%;
 }
 
 ul {
-  list-style: none;
-  text-align: center;
-  font-size: 10px;
+    list-style: none;
+    text-align: center;
+    font-size: 10px;
 }
 
-#address,
-#hours,
-#phone {
-  margin-left: 0;
-  padding: 0 10px 0 10px;
+#address, #hours, #phone {
+    margin-left: 0;
+    padding: 0 10px 0 10px;
 }
 
 .h3 {
-  padding-top: 40px;
-  float: left;
+    padding-top:40px;
+    float: left;
 }
 
 h5 {
-  margin-left: 30px;
-  text-align: center;
+    margin-left: 30px;
+    text-align: center;
 }
 
-/* Media Queries */
+@media only screen 
+   and (max-width : 768px) {
+    footer {
+        width: 100%;
+        height: auto;
+       margin: 0;
+       position: absolute;
+       top: 4700px;
+    }
+   }
+
