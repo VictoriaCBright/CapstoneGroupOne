@@ -107,6 +107,8 @@ ul {
         "panel3" 
         "panel4";
         text-align: center;
+        width: 100%;
+        margin: auto;
     }
 }
 
@@ -116,7 +118,7 @@ ul {
     margin: 10px;
     padding: 3px;
     overflow: hidden;
-    
+    width: 100%;
     border: 1px solid black;
     border-radius: 7px;
     background-color: #cbcbcb46;
@@ -184,6 +186,7 @@ h3 {
 footer {
     padding: 0;
     margin: 0;
+    max-width: 100%;
     box-shadow: 5px 5px 15px -4px #000000;
 }
 
@@ -207,3 +210,15 @@ h5 {
     margin-left: 30px;
     text-align: center;
 }
+
+
+@media only screen 
+   and (max-width : 768px) {
+    footer {
+        width: 100%;
+        height: auto;
+       margin: 0;
+       position: absolute;
+       top: 2800px;
+    }
+   }
