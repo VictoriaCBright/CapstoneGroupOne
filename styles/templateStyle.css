@@ -13,7 +13,7 @@ body{
 
 /* HEADER */
 header {
-width:100%;
+max-width:100%;
 margin: 0;
 text-align: center;
 /* come back to add position to fix header/nav to top when scroll */
@@ -30,11 +30,9 @@ padding: 1em 0 1em 0;
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    /* border: solid black .5px; */
-    /* background-color: #c5c5c546; */
+   
     border-radius: 5px;
     font-size: 2em;
-    /* margin: 0 0 0 0 ; */
 }
 
 
@@ -67,6 +65,7 @@ ul {
 }
 
 
+
 #parentDiv {
     display: grid;
     gap: 1rem;
@@ -74,11 +73,26 @@ ul {
     "panel1 panel2"
     "panel3 panel4";
     grid-template-columns: repeat(2, 1fr);
-    margin: 15px 15em;
+    /* margin: 15px 15em; */
+    max-width: 100%;
+    margin: 0;
 }
 
 
-.subDiv {
+@media only screen 
+   and (max-width : 768px) {
+    #parentDiv {
+
+        display: inline-block;
+        max-width: 100vw;
+        margin: 20px 10px 20px 10px;
+        /* margin-left: 50px; */
+        overflow: hidden;
+        text-align: center;
+    }
+}
+
+#subDiv {
     text-align: center;
     margin: 5px;
     padding: 15px;
@@ -86,9 +100,10 @@ ul {
     border-radius: 7px;
     background-color: #cbcbcb46;
     justify-content: space-evenly; 
+    box-shadow: 5px 5px 15px -4px #000000;
 }
 
-.subDiv > h3 {
+#subDiv > h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
@@ -103,13 +118,58 @@ ul {
     font-weight: 600;
 }
 
-.subDiv ul li, p{
+#subDiv ul li, p{
     font-size: 15px;
 }
 
+
+/* Footer */
+
+
 footer {
-    width: 100%;
-    bottom: 0;
-    padding-top: 20vh;
-    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    /* position: absolute;
+    top: 3300px; */
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    font-size: 10px;
+}
+
+#address, #hours, #phone {
+    margin-left: 0;
+    padding: 0 10px 0 10px;
+}
+
+.h3 {
+    padding-top:40px;
+    float: left;
+}
+
+h5 {
+    margin-left: 30px;
+    text-align: center;
+}
+
+@media only screen 
+   and (max-width : 768px) {
+    footer {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+       margin: 0;
+       /* position: absolute;
+       top: 4700px; */
+    }
+   }
+
+
+   @media only screen 
+   and (max-width : 768px) {
+    h5 { margin: 0;
+    }
 }
