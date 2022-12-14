@@ -103,6 +103,22 @@ header {
 }
 
 
+@media only screen 
+   and (max-width : 425px) {
+    #ib {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        /* gap: 1rem;
+        grid-template-areas: 
+        "panel1" 
+        "panel2"
+        "panel3" 
+        "panel4";
+        text-align: center; */
+    }
+}
+
 /* HEADING - OUR MISSION */
 #mission {
    width: 100%;
@@ -234,7 +250,7 @@ iframe {
         display: inline-block;
         position: absolute;
         top: 2650px;
-        width: 97%;
+        width: 96%;
         height: auto;
         text-align: center;
        float:none;
@@ -250,7 +266,7 @@ iframe {
         display: inline-block;
         position: absolute;
         top: 3230px;
-        width: 97%;
+        width: 96%;
         height: auto;
         text-align: center;
        float:none;
@@ -267,7 +283,7 @@ iframe {
         display: inline-block;
         position: absolute;
         top: 3780px;
-        width: 97%;
+        width: 96%;
         height: auto;
         text-align: center;
        float:none;
