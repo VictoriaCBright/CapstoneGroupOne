@@ -27,6 +27,8 @@ header {
     padding: 1em 0 1em 0;
     
     }
+
+   
     
     .flexNav {
         display: flex;
@@ -153,7 +155,7 @@ iframe {
     height: 60%;
     position: absolute;
     right: 10px;
-    top: 1320px;
+    top: 1279px;
     /* padding:100px; */
 }
 /* 2nd video */
@@ -162,7 +164,7 @@ iframe {
     height: 60%;
     position: absolute;
     right: 10px;
-    top: 1895px;
+    top: 1855px;
 }
 
 /* 3rd video */
@@ -171,10 +173,10 @@ iframe {
     height: 60%;
     position: absolute;
     right: 10px;
-    top: 2410px;
+    top: 2398px;
 }
 
-
+/* 1st video tablet*/
 @media only screen 
    and (max-width : 768px) {
     #trainingdiv {
@@ -190,13 +192,13 @@ iframe {
     }
    }
 
-
+/* 2nd video tablet*/
    @media only screen 
    and (max-width : 768px) {
     #cattraining {
         display: inline-block;
         position: absolute;
-        top: 3580px;
+        top: 3570px;
         width: 97%;
         height: auto;
         text-align: center;
@@ -207,13 +209,13 @@ iframe {
    }
 
    
-
+/* 3rd video tablet */
    @media only screen 
    and (max-width : 768px) {
     #catsanddogs {
         display: inline-block;
         position: absolute;
-        top: 4150px;
+        top: 4100px;
         width: 97%;
         height: auto;
         text-align: center;
@@ -223,6 +225,56 @@ iframe {
     }
    }
    
+
+   /* first video L mobile*/
+
+   @media only screen 
+   and (max-width : 425px) {
+    #trainingdiv {
+        display: inline-block;
+        position: absolute;
+        top: 2650px;
+        width: 97%;
+        height: auto;
+        text-align: center;
+       float:none;
+       padding: 0;
+       /* margin: 0px 20px 0px 20px; */
+    }
+   }
+
+   /* 2nd video L mobile*/
+   @media only screen 
+   and (max-width : 425px) {
+    #cattraining {
+        display: inline-block;
+        position: absolute;
+        top: 3230px;
+        width: 97%;
+        height: auto;
+        text-align: center;
+       float:none;
+       padding: 0;
+       /* margin: 0 20 0 20; */
+    }
+   }
+
+   
+/* 3rd video L mobile */
+   @media only screen 
+   and (max-width : 425px) {
+    #catsanddogs {
+        display: inline-block;
+        position: absolute;
+        top: 3780px;
+        width: 97%;
+        height: auto;
+        text-align: center;
+       float:none;
+       padding: 0;
+       /* margin: 0 20 0 20; */
+    }
+   }
 
 /* SPECIFIC TO ADOPT IMAGE */
 /* COME BACK TO KEEP IMAGE IN DIV */
@@ -268,7 +320,22 @@ h5 {
         height: auto;
        margin: 0;
        position: absolute;
-       top: 4700px;
+       top: 4650px;
+       text-align: center;
     }
    }
 
+   @media only screen 
+   and (max-width : 425px) {
+    footer {
+        width: 100%;
+        height: auto;
+       margin: 0;
+       position: absolute;
+       top: 4300px;
+       /* display: inline-block; */
+       /* font-size: 4px; */
+       text-align: center;
+    }
+   }
+ 
