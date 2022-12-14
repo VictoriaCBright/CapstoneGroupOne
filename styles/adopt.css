@@ -27,17 +27,19 @@ padding: 1em 0 1em 0;
 
 }
 
-.flexNav {
+
+/* commented out because links were outside of box */
+/* .flexNav {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
     /* border: solid black .5px; */
     /* background-color: #c5c5c546; */
-    border-radius: 5px;
-    font-size: 2em;
+    /* border-radius: 5px; */
+    /* font-size: 2em; */
     /* margin: 0 0 0 0 ; */
-}
+
 
 #adoptShelter {
     width: 100%;
@@ -45,6 +47,7 @@ padding: 1em 0 1em 0;
     border-radius: 0;
     margin-bottom: 10px;
     margin-top: 10px;
+    box-shadow: 5px 5px 15px -4px #000000;
 }
 
 #pageTitle {
@@ -200,8 +203,25 @@ h3 {
         border-radius: 7px;
         background-color: #cbcbcb46;
         font-size: 20px;
-        
+        margin-left: 20px;
         box-shadow: 5px 5px 15px -4px #000000;
+        width: 100%;
+    }
+   }
+
+   @media only screen 
+   and (max-width : 425px) {
+    #barnBuddies {
+        text-align: center;
+        margin-top: 20px;
+        padding: 3px;
+        border: 1px solid black;
+        border-radius: 7px;
+        background-color: #cbcbcb46;
+        font-size: 20px;
+        margin-left: 20px;
+        box-shadow: 5px 5px 15px -4px #000000;
+        width: 96%;
     }
    }
 /* Specific to barn buddies */
@@ -248,6 +268,24 @@ h5 {
         height: auto;
        margin: 0;
        position: absolute;
-       top: 3500px;
+       top: 3400px;
+    }
+   }
+
+ 
+
+   @media only screen 
+   and (max-width : 425px) {
+    footer {
+        width: 100%;
+        height: auto;
+       margin: 0;
+       position: absolute;
+       top: 3800px;
+       /* display: inline-block; */
+       /* font-size: 4px; */
+       text-align: center;
+       
+       /* flex-wrap: wrap; */
     }
    }
