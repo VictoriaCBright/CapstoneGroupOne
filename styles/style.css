@@ -29,8 +29,8 @@ header {
     }
 
    
-    
-    .flexNav {
+    /* Commented out because links hung over box on optimization */
+    /* .flexNav {
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -38,7 +38,7 @@ header {
        
         border-radius: 5px;
         font-size: 2em;
-    }
+    } */
     
     
     .navLinks {
@@ -249,7 +249,7 @@ iframe {
     #trainingdiv {
         display: inline-block;
         position: absolute;
-        top: 2650px;
+        top: 2690px;
         width: 96%;
         height: auto;
         text-align: center;
